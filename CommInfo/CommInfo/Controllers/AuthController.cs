@@ -148,7 +148,7 @@ namespace CommInfo.Controllers
         ///////////////////////////////////////////////////////
 
         // GET: /Auth/IndexRole
-        //[Authorize(Roles="Admin, Tester")]  // Authorizes the Admin and Tester roles
+        [Authorize(Roles="Admin, Tester")]  // Authorizes the Admin and Tester roles
         public ActionResult IndexRole()
         {
             var roles = db.Roles.ToList();

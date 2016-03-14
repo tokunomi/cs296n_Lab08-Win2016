@@ -104,7 +104,7 @@ namespace CommInfo.Controllers
                     message.Subject = messageVM.Subject;
                     message.Body = messageVM.Body;
                     //message.MemberID = fromMember.Id;    
-                    message.MemberID = fromMember.MemberID;
+                    //message.MemberID = fromMember.MemberID;  // comment out for migrations seed
 
                 thread.Messages.Add(message);
 

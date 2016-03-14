@@ -8,11 +8,12 @@ namespace CommInfo.Models
 {
     public class Message
     {
-        List<Member> members = new List<Member>();
+        //List<Member> members = new List<Member>();  // comment out for migrations
         
         public int MessageID { get; set; }
         public int ThreadID { get; set; }
-        public int MemberID { get; set; }
+        //public int MemberID { get; set; }
+        public string MemberID { get; set; }
 
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString = "{0:MM-dd-yyyy}", ApplyFormatInEditMode = true)]

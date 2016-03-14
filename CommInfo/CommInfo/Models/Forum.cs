@@ -11,6 +11,9 @@ namespace CommInfo.Models
 
         List<Member> members = new List<Member>();
 
+        // may need this
+        List<Message> messages = new List<Message>();
+
         public int ForumID { get; set; }
         public string ForumName { get; set; }
 
@@ -24,5 +27,9 @@ namespace CommInfo.Models
             get { return members; } 
         }
 
+        public List<Message> Messages 
+        {
+            get { return messages; }
+        }
     }
 }

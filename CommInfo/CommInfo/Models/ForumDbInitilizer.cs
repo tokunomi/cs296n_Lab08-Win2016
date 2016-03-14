@@ -38,10 +38,12 @@ namespace CommInfo.Models
             //Thread trd002 = new Thread { ThreadID = 02, Topic = "Test Topic 2"};
 
             // Messages seed
-            Message msg01 = new Message { MemberID = 01, Date = seedDate, From = "John", Subject = "Did you see the game?", Body = "The Alii trashed the Bulldogs!" };
-            Message msg02 = new Message { MemberID = 02, Date = seedDate, From = "David", Subject = "Meeting at Aiea Library this Friday", Body = "We're planning our next surf meet. Anyone want to come?" };
-            Message msg03 = new Message { MemberID = 03, Date = seedDate, From = "Carrie", Subject = "Bookclub meeting this week?", Body = "Are we having a meeting this Thursday?" };
-            Message msg04 = new Message { MemberID = 04, Date = seedDate, From = "Nani", Subject = "Pearl Harbor Park Picnic", Body = "Bring a kite and the keiki! We have the musubi ready." };
+            // Comment out for migrations seed
+            //Message msg01 = new Message { MemberID = 01, Date = seedDate, From = "John", Subject = "Did you see the game?", Body = "The Alii trashed the Bulldogs!" };
+            //Message msg02 = new Message { MemberID = 02, Date = seedDate, From = "David", Subject = "Meeting at Aiea Library this Friday", Body = "We're planning our next surf meet. Anyone want to come?" };
+            //Message msg03 = new Message { MemberID = 03, Date = seedDate, From = "Carrie", Subject = "Bookclub meeting this week?", Body = "Are we having a meeting this Thursday?" };
+            //Message msg04 = new Message { MemberID = 04, Date = seedDate, From = "Nani", Subject = "Pearl Harbor Park Picnic", Body = "Bring a kite and the keiki! We have the musubi ready." };
+
             //Message msg01 = new Message { Date = seedDate, Subject = "Did you see the game?" };
             //Message msg02 = new Message { Date = seedDate, Subject = "Meeting at Aiea Library this Friday" };
             //Message msg03 = new Message { Date = seedDate, Subject = "Bookclub meeting this week?" };
@@ -55,10 +57,11 @@ namespace CommInfo.Models
             trd002.Members.Add(memb002);
             trd003.Members.Add(memb003);
             trd004.Members.Add(memb004);
-            trd001.Messages.Add(msg01);
-            trd002.Messages.Add(msg02);
-            trd003.Messages.Add(msg03);
-            trd004.Messages.Add(msg04);
+            // comment out Mesages for migrations seed
+            //trd001.Messages.Add(msg01);
+            //trd002.Messages.Add(msg02);
+            //trd003.Messages.Add(msg03);
+            //trd004.Messages.Add(msg04);
             frm001.Threads.Add(trd001);
             frm001.Threads.Add(trd002);
             frm002.Threads.Add(trd003);
